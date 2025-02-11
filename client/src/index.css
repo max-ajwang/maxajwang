@@ -1,0 +1,297 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* section */
+  .section {
+    @apply my-0 mx-auto max-w-[var(--max-width)] bg-[var(--white)] max-sm:w-full p-1 max-md:w-11/12 max-lg:w-5/6 max-xl:w-10/12 max-2xl:w-11/12 max-wide:w-5/6;
+  }
+
+  /* @media screen and (min-width: 992px) {
+    .section {
+      width: 95vw;
+    }
+  } */
+
+  /*BUTTONS*/
+  .button {
+    display: inline-block;
+    background-color: var(--black);
+    color: #fff;
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    transition: 0.3s;
+  }
+  .button:hover {
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@layer utilities {
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colors =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: hsl(var(--hue-color), 89%, 60%);
+  --second-color: hsl(var(--hue-color), 56%, 12%);
+
+  /* dark shades of primary color*/
+  --primary-1: hsl(205, 86%, 17%);
+  --primary-2: hsl(205, 77%, 27%);
+  --primary-3: hsl(205, 72%, 37%);
+  --primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --primary-6: hsl(205, 89%, 70%);
+  --primary-7: hsl(205, 90%, 76%);
+  --primary-8: hsl(205, 86%, 81%);
+  --primary-9: hsl(205, 90%, 88%);
+  --primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --grey-1: hsl(209, 61%, 16%);
+  --grey-2: hsl(211, 39%, 23%);
+  --grey-3: hsl(209, 34%, 30%);
+  --grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --grey-5: hsl(210, 22%, 49%);
+  --grey-6: hsl(209, 23%, 60%);
+  --grey-7: hsl(211, 27%, 70%);
+  --grey-8: hsl(210, 31%, 80%);
+  --grey-9: hsl(212, 33%, 89%);
+  --grey-10: hsl(210, 36%, 96%);
+  --white: #fff;
+  --red-dark: hsl(360, 67%, 44%);
+  --red-light: hsl(360, 71%, 66%);
+  --green-dark: hsl(125, 67%, 44%);
+  --green-light: hsl(125, 71%, 66%);
+  --black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+
+  /*===== Typography =====*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+  /*===== Margins =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+  }
+}
+
+/*===== BASE =====*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: var(--body-font);
+  background: var(--grey-10);
+  margin: 0;
+  color: var(--second-color);
+  line-height: 1.5;
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+p {
+  margin: 1rem 0 0 0;
+  letter-spacing: var(--spacing);
+  /* text-transform: capitalize; */
+  line-height: 1.25;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+/*
+=============== 
+Navbar
+===============
+*/
+nav {
+  background: var(--white);
+  box-shadow: var(--light-shadow);
+}
+
+.nav-center {
+  margin: 0 auto;
+  /* padding-right: 1.5rem; */
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  /* background-color: var(--grey-4); */
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  background: transparent;
+  border-color: transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: var(--primary-1);
+  transform: rotate(90deg);
+}
+.logo {
+  height: 40px;
+}
+.links a {
+  color: var(--grey-3);
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: var(--transition);
+}
+.links a:hover {
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+  padding-left: 1.5rem;
+}
+.social-icons {
+  display: none;
+}
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.show-container {
+  height: 10rem;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+}
+
+/*===== HOME/LANDING PAGE =====*/
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: var(--grey-0);
+  color: var(--black);
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 1rem 0;
+}
+.footer__title {
+  font-size: 1.5rem;
+  margin-bottom: var(--mb-2);
+}
+.footer__social {
+  margin-bottom: var(--mb-1);
+}
+.footer__icon {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0 var(--mb-2);
+}
