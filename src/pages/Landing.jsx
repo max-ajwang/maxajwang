@@ -11,6 +11,7 @@ import leverpapers from '../assets/images/leverpapers.jpg';
 import cocktails from '../assets/images/cocktails.jpg';
 import menu from '../assets/images/menu.jpg';
 import grocery_254 from '../assets/images/grocery_254.jpg';
+import shoe_website from '../assets/images/shoe_website.jpg';
 import { Link } from 'react-router-dom';
 
 const Landing = () => {
@@ -29,8 +30,9 @@ const Landing = () => {
             <br />
           </h2>
           <p className="text-lg leading-6">
-            I use writing, projects and videos to master and share succinct
-            knowledge on computer science and software development concepts.
+            Using writing, projects and short videos to master and share
+            succinct knowledge and concepts on computer science and software
+            development.
           </p>
         </div>
 
@@ -88,6 +90,24 @@ const Landing = () => {
               className="text-md font-semibold"
             >
               https://leverpapers.onrender.com
+            </a>
+          </div>
+
+          <div className="w-full bg-gray-100 hover:bg-gray-200 rounded-lg p-4">
+            <img
+              src={shoe_website}
+              alt="Project 1"
+              className="h-20 w-20 rounded-full"
+            />
+            <h2 className="font-semibold text-lg">shoe-website-254</h2>
+            <p className="my-8 text-sm font-normal leading-5">
+              E-commerce website template for shoes.
+            </p>
+            <a
+              href="https://shoe-website-254.netlify.app/"
+              className="text-md font-semibold"
+            >
+              https://shoe-website-254.netlify.app/
             </a>
           </div>
 
