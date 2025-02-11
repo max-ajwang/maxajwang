@@ -30,9 +30,8 @@ const Landing = () => {
             <br />
           </h2>
           <p className="text-lg leading-6">
-            Using writing, projects and short videos to master and share
-            succinct knowledge and concepts on computer science and software
-            development.
+            Articles, short videos, and projects to master and share succinct
+            knowledge and concepts on computer science and software development.
           </p>
         </div>
 
