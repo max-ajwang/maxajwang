@@ -207,7 +207,7 @@ nav {
 }
 .links a {
   color: var(--grey-3);
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -221,6 +221,7 @@ nav {
 }
 .social-icons {
   display: none;
+  padding-right: 4rem;
 }
 .links-container {
   height: 0;

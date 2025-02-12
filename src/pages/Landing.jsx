@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 const Landing = () => {
   return (
     <>
-      <div className="section pt-10 pr-4 pb-4 pl-12 min-h-full font-montserrat max-md:px-9 max-lg:px-11 max-xl:p-11 max-2xl:p-12">
+      <div className="section pt-10 pr-12 pb-4 pl-12 min-h-full font-montserrat max-md:px-9 max-lg:px-11 max-xl:p-11 max-2xl:p-12">
         <div className="grid grid-cols-1 gap-4">
           <img
             src={portraitImg}
@@ -29,7 +29,7 @@ const Landing = () => {
             Technical writer.
             <br />
           </h2>
-          <p className="text-lg leading-6">
+          <p className="text-lg leading-6 w-2/3">
             Articles, short videos, and projects to master and share succinct
             knowledge and concepts on computer science and software development.
           </p>
@@ -38,6 +38,16 @@ const Landing = () => {
         <button className="button mt-6 mb-[--mb-1]">Join My Newsletter</button>
 
         <div className="flex justify-center items-center gap-8 mt-16 max-w-screen-2xl">
+          <div className="h-auto w-auto bg-[var(--grey-9)] px-2 py-2 rounded-full">
+            <Link>
+              <FaHtml5 className="text-3xl" />
+            </Link>
+          </div>
+          <div className="h-auto w-auto bg-[var(--grey-9)] px-2 py-2 rounded-full">
+            <Link>
+              <FaCss3 className="text-3xl" />
+            </Link>
+          </div>
           <div className="h-auto w-auto bg-[var(--grey-9)] px-2 py-2 rounded-full">
             <Link>
               <FaReact className="text-3xl" />
@@ -80,8 +90,8 @@ const Landing = () => {
               alt="Project 1"
               className="h-20 w-20 rounded-full"
             />
-            <h2 className="font-semibold text-lg">Leverpapers</h2>
-            <p className="my-8 text-sm font-normal leading-5">
+            <h2 className="font-semibold text-xl">Leverpapers</h2>
+            <p className="my-8 font-normal text-base leading-5">
               A CRUD API application for order management and status tracking
             </p>
             <a
@@ -99,7 +109,7 @@ const Landing = () => {
               className="h-20 w-20 rounded-full"
             />
             <h2 className="font-semibold text-lg">shoe-website-254</h2>
-            <p className="my-8 text-sm font-normal leading-5">
+            <p className="my-8 font-normal text-base leading-5">
               E-commerce website template for shoes.
             </p>
             <a
@@ -117,7 +127,7 @@ const Landing = () => {
               className="h-20 w-20 rounded-full"
             />
             <h2 className="font-semibold text-lg">e-menu254</h2>
-            <p className="my-8 text-sm font-normal leading-5">
+            <p className="my-8 font-normal text-base leading-5">
               Simple web based menu with search engine and filter.
             </p>
             <a
@@ -135,7 +145,9 @@ const Landing = () => {
               className="h-20 w-20 rounded-full"
             />
             <h2 className="font-semibold text-lg">Cocktails</h2>
-            <p className="my-8 text-sm font-normal leading-5">Cocktails API</p>
+            <p className="my-8 font-normal text-base leading-5">
+              Cocktails API
+            </p>
             <a
               href="https://mixmaster254.netlify.app/"
               className="text-md font-semibold"
@@ -151,7 +163,7 @@ const Landing = () => {
               className="h-20 w-20 rounded-full"
             />
             <h2 className="font-semibold text-lg">Grocery-254</h2>
-            <p className="my-8 text-sm font-normal leading-5">
+            <p className="my-8 font-normal text-base leading-5">
               List implementations of shopping cart
             </p>
             <a
