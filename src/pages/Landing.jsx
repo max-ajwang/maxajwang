@@ -229,61 +229,72 @@ const Landing = () => {
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
             style={{ backgroundImage: `url(${leverpapers})` }}
           >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2>Leverpapers</h2>
-                <p>Full Stack Web App</p>
+            <a href="https://leverpapers.onrender.com">
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2>Leverpapers</h2>
+                  <p>Full Stack Web App</p>
+                </div>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <img src={sendIcon} alt="" className="w-5" />
+                </div>
               </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <img src={sendIcon} alt="" className="w-5" />
-              </div>
-            </div>
+            </a>
           </div>
 
-          <div
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${menu})` }}
-          >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2>e-menu</h2>
-                <p>Simple menu website</p>
-              </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <img src={sendIcon} alt="" className="w-5" />
+          <a href="https://e-menu254.netlify.app/">
+            <div
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+              style={{ backgroundImage: `url(${menu})` }}
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2>e-menu</h2>
+                  <p>Simple menu website</p>
+                </div>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <img src={sendIcon} alt="" className="w-5" />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${shoe_website})` }}
+          <a
+            href="https://shoe-website-254.netlify.app/
+"
           >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2>Shoe Website</h2>
-                <p>E-commerce Website</p>
-              </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <img src={sendIcon} alt="" className="w-5" />
+            <div
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+              style={{ backgroundImage: `url(${shoe_website})` }}
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2>Shoe Website</h2>
+                  <p>E-commerce Website</p>
+                </div>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <img src={sendIcon} alt="" className="w-5" />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
 
-          <div
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${cocktails})` }}
-          >
-            <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
-              <div>
-                <h2>Cocktails</h2>
-                <p>Cocktails API website</p>
-              </div>
-              <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
-                <img src={sendIcon} alt="" className="w-5" />
+          <a href="https://mixmaster254.netlify.app/">
+            <div
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+              style={{ backgroundImage: `url(${cocktails})` }}
+            >
+              <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                <div>
+                  <h2>Cocktails</h2>
+                  <p>Cocktails API website</p>
+                </div>
+                <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                  <img src={sendIcon} alt="" className="w-5" />
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </>
