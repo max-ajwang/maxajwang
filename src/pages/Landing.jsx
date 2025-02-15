@@ -225,11 +225,11 @@ const Landing = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 my-10 gap-10">
-          <div
-            className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
-            style={{ backgroundImage: `url(${leverpapers})` }}
-          >
-            <a href="https://leverpapers.onrender.com">
+          <a href="https://leverpapers.onrender.com">
+            <div
+              className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
+              style={{ backgroundImage: `url(${leverpapers})` }}
+            >
               <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
                 <div>
                   <h2>Leverpapers</h2>
@@ -239,8 +239,8 @@ const Landing = () => {
                   <img src={sendIcon} alt="" className="w-5" />
                 </div>
               </div>
-            </a>
-          </div>
+            </div>
+          </a>
 
           <a href="https://e-menu254.netlify.app/">
             <div
